@@ -1,0 +1,22 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="enum.Enum.INCLUDE_FILE_NAME_IN_METADATA" />
+          <option value="enum.Enum.INCLUDE_EXTENSION_IN_METADATA" />
+          <option value="enum.Enum.INCLUDE_FILE_SIZE_IN_METADATA" />
+          <option value="enum.Enum.INCLUDE_HASHCODE_AND_DATE_IN_METADATA" />
+          <option value="enum.Enum.REPLACE_FILE_NAME_IN_METADATA" />
+          <option value="enum.Enum.REPLACE_EXTENSION_IN_METADATA" />
+          <option value="enum.Enum.REPLACE_FILE_SIZE_IN_METADATA" />
+          <option value="enum.Enum.*" />
+          <option value="real_python_django_project.pages.urls.pages" />
+          <option value="gui.frames.main_frames.improve_frame.ImproveFrame._remove_last_line" />
+          <option value="gui.frames.main_frames.improve_frame.ImproveFrame._add_new_line" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

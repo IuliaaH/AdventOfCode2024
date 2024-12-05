@@ -22,7 +22,7 @@ def read_from_file() -> tuple[list[tuple[int, int]], list[list[int]]]:
     return rules, page_numbers
 
 
-def page_order_is_valid(page, rules):
+def page_order_is_valid(page: list, rules: list[tuple]) -> bool:
     for page_index in range(len(page) - 1):
         if (page[page_index + 1], page[page_index]) in rules:
             return False
@@ -30,7 +30,7 @@ def page_order_is_valid(page, rules):
     return True
 
 
-def first_star():
+def first_star() -> int:
     rules, page_numbers = read_from_file()
     count_valid_page_middle_number = 0
     for page in page_numbers:
@@ -39,14 +39,14 @@ def first_star():
     return count_valid_page_middle_number
 
 
-def switch_pages(page, page_index1, page_index2):
+def switch_pages(page: list, page_index1: int, page_index2: int) -> list:
     temporary_slot = page[page_index1]
     page[page_index1] = page[page_index2]
     page[page_index2] = temporary_slot
     return page
 
 
-def order_pages(page, rules):
+def order_pages(page: list, rules: list[tuple]) -> list:
     for page_index in range(len(page)-1):
         if (page[page_index], page[page_index+1]) not in rules:
             correct_order = False
@@ -60,7 +60,7 @@ def order_pages(page, rules):
     return page
 
 
-def second_star():
+def second_star() -> int:
     rules, page_numbers = read_from_file()
     count_valid_page_middle_number = 0
     for page in page_numbers:
